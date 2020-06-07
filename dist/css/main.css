@@ -452,7 +452,7 @@ body {
   bottom: 50%;
   width: auto;
   padding: 16px;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   -webkit-transition: 0.6s ease;
@@ -479,7 +479,7 @@ body {
 
 /* line 49, src/sass/general/_site.scss */
 .site-main .text {
-  color: #f2f2f2;
+  color: #ffffff;
   font-size: 1.5em;
   left: 45px;
   position: absolute;
@@ -552,70 +552,90 @@ body {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   font-size: 14px;
+  background: #ffffff;
 }
 
-/* line 14, src/sass/general/_header.scss */
+/* line 17, src/sass/general/_header.scss */
 .menu-icon {
   display: none;
   cursor: pointer;
 }
 
-/* line 19, src/sass/general/_header.scss */
+/* line 22, src/sass/general/_header.scss */
 .site-logo {
   max-height: 50px;
-  padding-left: 15px;
-}
-
-/* line 24, src/sass/general/_header.scss */
-.site-header:hover {
-  background-color: black;
+  padding: 0 15px;
 }
 
 /* line 27, src/sass/general/_header.scss */
-.site-header:hover .list-menu a {
-  color: #bcbcbc;
+.site-header-main {
+  background: transparent;
 }
 
 /* line 31, src/sass/general/_header.scss */
-.site-header:hover .list-menu a:hover {
-  color: red;
+.site-header-main:hover {
+  background-color: #000000;
 }
 
-/* line 35, src/sass/general/_header.scss */
-.site-header:hover .site-logo {
+/* line 34, src/sass/general/_header.scss */
+.site-header-main:hover .list-menu a {
+  color: #bcbcbc;
+}
+
+/* line 38, src/sass/general/_header.scss */
+.site-header-main:hover .list-menu a:hover {
+  color: #717171;
+}
+
+/* line 42, src/sass/general/_header.scss */
+.site-header-main:hover .site-logo {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
+/* line 47, src/sass/general/_header.scss */
+.separating-header-line {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  top: 78px;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 41, src/sass/general/_header.scss */
+  /* line 57, src/sass/general/_header.scss */
   .site-logo {
     padding: 0px;
     height: 46px;
   }
-  /* line 46, src/sass/general/_header.scss */
+  /* line 62, src/sass/general/_header.scss */
   .site-header {
     max-height: 74px;
   }
-  /* line 49, src/sass/general/_header.scss */
+  /* line 65, src/sass/general/_header.scss */
   .site-header .menu-icon {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #000000;
     font-size: 20px;
   }
-  /* line 57, src/sass/general/_header.scss */
+  /* line 73, src/sass/general/_header.scss */
   .site-header:hover {
     background-color: transparent;
     -webkit-transition: 0s;
     transition: 0s;
   }
-  /* line 61, src/sass/general/_header.scss */
+  /* line 77, src/sass/general/_header.scss */
   .site-header:hover .site-logo {
     -webkit-filter: none;
             filter: none;
   }
-  /* line 66, src/sass/general/_header.scss */
+  /* line 82, src/sass/general/_header.scss */
+  .separating-header-line {
+    top: 74px;
+  }
+  /* line 86, src/sass/general/_header.scss */
   .responsive-head:hover {
     background-color: rgba(0, 0, 0, 0.9);
     -webkit-transition: ease-in;
@@ -625,11 +645,11 @@ body {
     -webkit-animation-duration: 1.5s;
             animation-duration: 1.5s;
   }
-  /* line 72, src/sass/general/_header.scss */
+  /* line 92, src/sass/general/_header.scss */
   .responsive-head:hover .menu-icon {
     color: #bcbcbc;
   }
-  /* line 76, src/sass/general/_header.scss */
+  /* line 96, src/sass/general/_header.scss */
   .responsive-head:hover .site-logo {
     -webkit-filter: invert(100%);
             filter: invert(100%);
@@ -647,26 +667,31 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
-/* line 8, src/sass/components/_lists.scss */
+/* line 9, src/sass/components/_lists.scss */
 .list-menu .menu-item {
-  font-weight: bold;
   padding: 0 15px;
 }
 
-/* line 13, src/sass/components/_lists.scss */
-.list-menu a {
-  color: black;
+/* line 12, src/sass/components/_lists.scss */
+.list-menu .menu-item a {
+  color: #000000;
   text-decoration: none;
 }
 
+/* line 18, src/sass/components/_lists.scss */
+.list-menu .active {
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 20, src/sass/components/_lists.scss */
+  /* line 24, src/sass/components/_lists.scss */
   .list-menu {
     display: none;
   }
-  /* line 24, src/sass/components/_lists.scss */
+  /* line 28, src/sass/components/_lists.scss */
   .responsive-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -677,20 +702,152 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    z-index: 0;
     padding: 50px 0px;
     -webkit-animation-name: fade;
             animation-name: fade;
     -webkit-animation-duration: 1.5s;
             animation-duration: 1.5s;
+    z-index: 9999;
   }
-  /* line 39, src/sass/components/_lists.scss */
+  /* line 43, src/sass/components/_lists.scss */
   .responsive-menu .menu-item {
     padding-bottom: 50px;
+  }
+  /* line 46, src/sass/components/_lists.scss */
+  .responsive-menu .menu-item a {
+    color: #bcbcbc;
+  }
+}
+
+/* line 1, src/sass/components/_projects.scss */
+.projects-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* line 6, src/sass/components/_projects.scss */
+.projects-main .project {
+  width: 50%;
+  max-height: 370px;
+  overflow: hidden;
+}
+
+/* line 11, src/sass/components/_projects.scss */
+.projects-main .project .project-link {
+  text-decoration: none;
+}
+
+/* line 15, src/sass/components/_projects.scss */
+.projects-main .project .text {
+  font-size: 20px;
+  color: #ffffff;
+  position: relative;
+  left: 50px;
+  bottom: 50px;
+  z-index: 0;
+}
+
+/* line 24, src/sass/components/_projects.scss */
+.projects-main .project .project-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 2s ease;
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+/* line 33, src/sass/components/_projects.scss */
+.projects-main .project:hover .project-img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 41, src/sass/components/_projects.scss */
+  .projects-main .project {
+    width: 100%;
+  }
+  /* line 44, src/sass/components/_projects.scss */
+  .projects-main .project .text {
+    left: 35px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* line 53, src/sass/components/_projects.scss */
+  .projects-main .project {
+    max-height: 250px;
+  }
+}
+
+/* line 1, src/sass/components/_project_bar.scss */
+.projects-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 7, src/sass/components/_project_bar.scss */
+.projects-bar .projects-header {
+  margin: 0;
+}
+
+/* line 11, src/sass/components/_project_bar.scss */
+.projects-bar .projects-button {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 15px;
+  background-color: #bcbcbc;
+  border-radius: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 22, src/sass/components/_project_bar.scss */
+  .projects-bar {
+    padding: 30px 35px;
+  }
+  /* line 24, src/sass/components/_project_bar.scss */
+  .projects-bar .projects-header {
+    font-size: 18px;
+  }
+  /* line 28, src/sass/components/_project_bar.scss */
+  .projects-bar .projects-button {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* line 35, src/sass/components/_project_bar.scss */
+  .projects-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 39, src/sass/components/_project_bar.scss */
+  .projects-bar .projects-header {
+    margin-bottom: 20px;
   }
 }

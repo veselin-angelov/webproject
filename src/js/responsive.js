@@ -7,5 +7,14 @@ function responsiveMenu() {
     } else {
         x.className = "list-menu";
         y.className = "site-header";
+        document.getElementById("site-header-id").style.position = "initial";
     }
 }
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var is_mobile = document.getElementsByClassName("site-header responsive-head")[0];
+    if (is_mobile.className === "site-header responsive-head") {
+        document.getElementById("site-header-id").style.position = "fixed";
+    }
+};

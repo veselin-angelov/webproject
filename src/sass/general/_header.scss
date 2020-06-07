@@ -9,6 +9,9 @@
     z-index: 1;
     transition: 0.6s;
     font-size: 14px;
+    // position: fixed;
+    // top: 0;
+    background: $secondary_color;
 }
 
 .menu-icon {
@@ -18,23 +21,36 @@
 
 .site-logo {
     max-height: 50px;
-    padding-left: 15px;
+    padding: 0 15px;
 }
 
-.site-header:hover {
-    background-color: black;
+.site-header-main {
+    background: transparent;
+}
+
+.site-header-main:hover {
+    background-color: $main_color;
 
     .list-menu a {
-        color: #bcbcbc;
+        color: $buttons_color;
     }
 
     .list-menu a:hover {
-        color: red;
+        color: $buttons_color_hover;
     }
 
     .site-logo {
         filter: invert(100%);
     }
+}
+
+.separating-header-line {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgba($color: $main_color, $alpha: .08);
+    top: 78px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -49,7 +65,7 @@
         .menu-icon {
             display: block;
             text-decoration: none;
-            color: black;
+            color: $main_color;
             font-size: 20px;
         }
     }
@@ -63,14 +79,18 @@
         }
     }
 
+    .separating-header-line {
+        top: 74px;
+    }
+
     .responsive-head:hover {
-        background-color: rgba($color: #000000, $alpha: .9);
+        background-color: rgba($color: $main_color, $alpha: .9);
         transition: ease-in;
         animation-name: fade;
         animation-duration: 1.5s;
 
         .menu-icon {
-            color: #bcbcbc;
+            color: $buttons_color;
         }
 
         .site-logo {

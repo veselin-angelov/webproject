@@ -1,0 +1,57 @@
+.projects-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .project {
+        width: 50%;
+        max-height: 370px;
+        overflow: hidden;
+
+        .project-link {
+            text-decoration: none;
+        }
+
+        .text {
+            font-size: 20px;
+            color: $secondary_color;
+            position: relative;
+            left: 50px;
+            bottom: 50px;
+            z-index: 0;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 2s ease;
+        }
+    }
+
+    .project:hover {
+        .project-img {
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .projects-main {
+        .project {
+            width: 100%;
+
+            .text {
+                left: 35px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .projects-main {
+        .project {
+            max-height: 250px;
+        }
+    }
+}

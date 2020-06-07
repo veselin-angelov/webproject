@@ -1,0 +1,44 @@
+.projects-bar {
+    display: flex;
+    padding: 30px 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    .projects-header {
+        margin: 0;
+    }
+
+    .projects-button {
+        text-decoration: none;
+        color: $main_color;
+        padding: 5px 15px;
+        background-color: $buttons_color;
+        border-radius: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .projects-bar {
+        padding: 30px 35px;
+        .projects-header {
+            font-size: 18px;
+        }
+
+        .projects-button {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .projects-bar {
+        flex-direction: column;
+        justify-content: center;
+
+        .projects-header {
+            margin-bottom: 20px;
+        }
+    }
+
+}

@@ -25,7 +25,7 @@
         bottom: 50%;
         width: auto;
         padding: 16px;
-        color: white;
+        color: $secondary_color;
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
@@ -43,11 +43,11 @@
       
     .prev:hover, 
     .next:hover {
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba($color: $main_color, $alpha: .8)
     }
       
     .text {
-        color: #f2f2f2;
+        color: $secondary_color;
         font-size: 1.5em;
         left: 45px;
         position: absolute;
@@ -65,7 +65,7 @@
         height: 12px;
         width: 12px;
         margin: 0 2px;
-        background-color: #bcbcbc;
+        background-color: $buttons_color;
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
@@ -73,7 +73,7 @@
       
     .active, 
     .dot:hover {
-        background-color: #717171;
+        background-color: $buttons_color_hover;
     }
       
     .fade {
