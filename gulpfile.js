@@ -36,7 +36,7 @@ var paths = {
 		output: 'dist/svg/'
 	},
 	copy: {
-		input: 'src/copy/**/*',
+		input: 'src/*.html',
 		output: 'dist/'
 	},
 	pictures: {

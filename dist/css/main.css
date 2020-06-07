@@ -376,6 +376,24 @@ template {
   display: none;
 }
 
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* line 1, src/sass/general/_general.scss */
 html {
   -webkit-box-sizing: border-box;
@@ -502,30 +520,12 @@ body {
           animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @media only screen and (max-width: 768px) {
-  /* line 96, src/sass/general/_site.scss */
+  /* line 87, src/sass/general/_site.scss */
   .site-main img {
     height: 100vh;
   }
-  /* line 100, src/sass/general/_site.scss */
+  /* line 91, src/sass/general/_site.scss */
   .site-main .text {
     left: 0px;
     text-align: center;
@@ -557,59 +557,82 @@ body {
 /* line 14, src/sass/general/_header.scss */
 .menu-icon {
   display: none;
+  cursor: pointer;
 }
 
-/* line 18, src/sass/general/_header.scss */
+/* line 19, src/sass/general/_header.scss */
 .site-logo {
   max-height: 50px;
   padding-left: 15px;
 }
 
-/* line 23, src/sass/general/_header.scss */
+/* line 24, src/sass/general/_header.scss */
 .site-header:hover {
   background-color: black;
 }
 
-/* line 26, src/sass/general/_header.scss */
+/* line 27, src/sass/general/_header.scss */
 .site-header:hover .list-menu a {
   color: #bcbcbc;
 }
 
-/* line 30, src/sass/general/_header.scss */
+/* line 31, src/sass/general/_header.scss */
 .site-header:hover .list-menu a:hover {
   color: red;
 }
 
-/* line 34, src/sass/general/_header.scss */
+/* line 35, src/sass/general/_header.scss */
 .site-header:hover .site-logo {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 40, src/sass/general/_header.scss */
+  /* line 41, src/sass/general/_header.scss */
+  .site-logo {
+    padding: 0px;
+    height: 46px;
+  }
+  /* line 46, src/sass/general/_header.scss */
   .site-header {
     max-height: 74px;
   }
-  /* line 43, src/sass/general/_header.scss */
+  /* line 49, src/sass/general/_header.scss */
   .site-header .menu-icon {
     display: block;
     text-decoration: none;
     color: black;
     font-size: 20px;
   }
-  /* line 52, src/sass/general/_header.scss */
-  .site-header:hover .menu-icon {
+  /* line 57, src/sass/general/_header.scss */
+  .site-header:hover {
+    background-color: transparent;
+    -webkit-transition: 0s;
+    transition: 0s;
+  }
+  /* line 61, src/sass/general/_header.scss */
+  .site-header:hover .site-logo {
+    -webkit-filter: none;
+            filter: none;
+  }
+  /* line 66, src/sass/general/_header.scss */
+  .responsive-head:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-transition: ease-in;
+    transition: ease-in;
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+  }
+  /* line 72, src/sass/general/_header.scss */
+  .responsive-head:hover .menu-icon {
     color: #bcbcbc;
   }
-  /* line 57, src/sass/general/_header.scss */
-  .site-logo {
-    padding: 0px;
-    height: 46px;
-  }
-  /* line 63, src/sass/general/_header.scss */
-  .site-navigation .list-menu {
-    display: none;
+  /* line 76, src/sass/general/_header.scss */
+  .responsive-head:hover .site-logo {
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
   }
 }
 
@@ -636,4 +659,38 @@ body {
 .list-menu a {
   color: black;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 20, src/sass/components/_lists.scss */
+  .list-menu {
+    display: none;
+  }
+  /* line 24, src/sass/components/_lists.scss */
+  .responsive-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 74px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 0;
+    padding: 50px 0px;
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+  }
+  /* line 39, src/sass/components/_lists.scss */
+  .responsive-menu .menu-item {
+    padding-bottom: 50px;
+  }
 }
