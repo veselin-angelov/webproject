@@ -1,51 +1,51 @@
 .list-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    z-index: 1;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	z-index: 1;
 
-    .menu-item {
-        padding: 0 15px;
+	.menu-item {
+		padding: 0 15px;
 
-        a {
-            color: $main_color;
-            text-decoration: none;
-        }
-    }
+		a {
+			color: $main_color;
+			text-decoration: none;
+		}
+	}
 
-    .active {
-        font-weight: bold;
-    }
+	.active {
+		font-weight: bold;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .list-menu {
-        display: none;
-    }
+	.list-menu {
+		display: none;
+	}
 
-    .responsive-menu {
-        display: flex;
-        font-size: 24px;
-        background-color: rgba($color: $main_color, $alpha: .9);
-        top: 74px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        position: fixed;
-        flex-direction: column;
-        padding: 50px 0px;
-        animation-name: fade;
-        animation-duration: 1.5s;
-        z-index: 9999;
+	.responsive-menu {
+		display: flex;
+		font-size: 24px;
+		background-color: rgba($color: $main_color, $alpha: .9);
+		top: 74px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: fixed;
+		flex-direction: column;
+		padding: 50px 0px;
+		animation-name: fade;
+		animation-duration: 1.5s;
+		z-index: 9999;
 
-        .menu-item {
-            padding-bottom: 50px;
+		.menu-item {
+			padding-bottom: 50px;
 
-            a {
-                color: $buttons_color;
-            }
-        }
-    }
+			a {
+				color: $buttons_color;
+			}
+		}
+	}
 }

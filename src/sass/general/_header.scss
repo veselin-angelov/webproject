@@ -1,98 +1,90 @@
 .site-header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    max-height: 78px;
-    height: 100vh;
-    z-index: 1;
-    transition: 0.6s;
-    font-size: 14px;
-    position: fixed;
-    top: 0;
-    background: $secondary_color;
-    
-    .site-logo {
-        max-height: 50px;
-        padding: 0 15px;
-    }
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	max-height: 78px;
+	height: 100vh;
+	z-index: 1;
+	transition: 0.6s;
+	font-size: 14px;
+	position: fixed;
+	top: 0;
+	background: $secondary_color;
+	
+	.site-logo {
+		max-height: 50px;
+		padding: 0 15px;
+	}
 
-    .menu-icon {
-        display: none;
-        cursor: pointer;
-    }
+	.menu-icon {
+		display: none;
+		cursor: pointer;
+	}
 }
 
 .site-header-main {
-    background: transparent;
+	background: transparent;
 }
 
 .site-header-main:hover {
-    background-color: $main_color;
+	background-color: $main_color;
 
-    .list-menu a {
-        color: $buttons_color;
-    }
+	.list-menu a {
+		color: $buttons_color;
+	}
 
-    .list-menu a:hover {
-        color: $buttons_color_hover;
-    }
+	.list-menu a:hover {
+		color: $buttons_color_hover;
+	}
 
-    .site-logo {
-        filter: invert(100%);
-    }
-}
-
-.separating-line {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: rgba($color: $main_color, $alpha: .08);
+	.site-logo {
+		filter: invert(100%);
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .site-header {
-        max-height: 74px;
+	.site-header {
+		max-height: 74px;
 
-        .site-logo {
-            padding: 0px;
-            height: 46px;
-        }
+		.site-logo {
+			padding: 0px;
+			height: 46px;
+		}
 
-        .menu-icon {
-            display: block;
-            text-decoration: none;
-            color: $main_color;
-            font-size: 20px;
-        }
-    }
-    
-    .site-header:hover {
-        transition: 0s;
-        
-        .site-logo {
-            filter: none;
-        }
-    }
-    
-    .site-header-main:hover {
-        background-color: transparent;
-    }
+		.menu-icon {
+			display: block;
+			text-decoration: none;
+			color: $main_color;
+			font-size: 20px;
+		}
+	}
+	
+	.site-header:hover {
+		transition: 0s;
+		
+		.site-logo {
+			filter: none;
+		}
+	}
+	
+	.site-header-main:hover {
+		background-color: transparent;
+	}
 
-    .responsive-head:hover {
-        background-color: rgba($color: $main_color, $alpha: .9);
-        transition: ease-in;
-        animation-name: fade;
-        animation-duration: 1.5s;
+	.responsive-head:hover {
+		background-color: rgba($color: $main_color, $alpha: .9);
+		transition: ease-in;
+		animation-name: fade;
+		animation-duration: 1.5s;
 
-        .menu-icon {
-            color: $buttons_color;
-        }
+		.menu-icon {
+			color: $buttons_color;
+		}
 
-        .site-logo {
-            filter: invert(100%);
-        }
-    }
+		.site-logo {
+			filter: invert(100%);
+		}
+	}
 }
