@@ -602,45 +602,40 @@ body {
   width: 100%;
   height: 1px;
   background: rgba(0, 0, 0, 0.08);
-  top: 78px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 57, src/sass/general/_header.scss */
+  /* line 56, src/sass/general/_header.scss */
   .site-header {
     max-height: 74px;
   }
-  /* line 60, src/sass/general/_header.scss */
+  /* line 59, src/sass/general/_header.scss */
   .site-header .site-logo {
     padding: 0px;
     height: 46px;
   }
-  /* line 65, src/sass/general/_header.scss */
+  /* line 64, src/sass/general/_header.scss */
   .site-header .menu-icon {
     display: block;
     text-decoration: none;
     color: #000000;
     font-size: 20px;
   }
-  /* line 73, src/sass/general/_header.scss */
+  /* line 72, src/sass/general/_header.scss */
   .site-header:hover {
     -webkit-transition: 0s;
     transition: 0s;
   }
-  /* line 76, src/sass/general/_header.scss */
+  /* line 75, src/sass/general/_header.scss */
   .site-header:hover .site-logo {
     -webkit-filter: none;
             filter: none;
   }
-  /* line 81, src/sass/general/_header.scss */
+  /* line 80, src/sass/general/_header.scss */
   .site-header-main:hover {
     background-color: transparent;
   }
-  /* line 85, src/sass/general/_header.scss */
-  .separating-line {
-    top: 74px;
-  }
-  /* line 89, src/sass/general/_header.scss */
+  /* line 84, src/sass/general/_header.scss */
   .responsive-head:hover {
     background-color: rgba(0, 0, 0, 0.9);
     -webkit-transition: ease-in;
@@ -650,15 +645,68 @@ body {
     -webkit-animation-duration: 1.5s;
             animation-duration: 1.5s;
   }
-  /* line 95, src/sass/general/_header.scss */
+  /* line 90, src/sass/general/_header.scss */
   .responsive-head:hover .menu-icon {
     color: #bcbcbc;
   }
-  /* line 99, src/sass/general/_header.scss */
+  /* line 94, src/sass/general/_header.scss */
   .responsive-head:hover .site-logo {
     -webkit-filter: invert(100%);
             filter: invert(100%);
   }
+}
+
+/* line 1, src/sass/general/_footer.scss */
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 6, src/sass/general/_footer.scss */
+.site-footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 50px 0px;
+}
+
+/* line 13, src/sass/general/_footer.scss */
+.site-footer .footer-content .footer-content-section .footer-content-header {
+  font-weight: bold;
+}
+
+/* line 17, src/sass/general/_footer.scss */
+.site-footer .footer-content .footer-content-section .footer-content-item {
+  font-size: 14px;
+  padding: 15px 0px 0px;
+}
+
+/* line 21, src/sass/general/_footer.scss */
+.site-footer .footer-content .footer-content-section .footer-content-item .footer-link {
+  text-decoration: none;
+  font-weight: 100;
+  color: #000000;
+}
+
+/* line 30, src/sass/general/_footer.scss */
+.site-footer .copyright {
+  font-weight: 100;
+  padding: 30px 0px;
+  border-top: 1px solid;
+  border-color: rgba(0, 0, 0, 0.08);
+  width: 100%;
+  text-align: center;
 }
 
 /* line 1, src/sass/components/_lists.scss */

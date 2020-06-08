@@ -50,7 +50,6 @@
     width: 100%;
     height: 1px;
     background: rgba($color: $main_color, $alpha: .08);
-    top: 78px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -80,10 +79,6 @@
     
     .site-header-main:hover {
         background-color: transparent;
-    }
-    
-    .separating-line {
-        top: 74px;
     }
 
     .responsive-head:hover {
