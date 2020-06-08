@@ -681,25 +681,30 @@ body {
   margin: 50px 0px;
 }
 
-/* line 13, src/sass/general/_footer.scss */
+/* line 11, src/sass/general/_footer.scss */
+.site-footer .footer-content .footer-content-section {
+  text-align: center;
+}
+
+/* line 14, src/sass/general/_footer.scss */
 .site-footer .footer-content .footer-content-section .footer-content-header {
   font-weight: bold;
 }
 
-/* line 17, src/sass/general/_footer.scss */
+/* line 18, src/sass/general/_footer.scss */
 .site-footer .footer-content .footer-content-section .footer-content-item {
   font-size: 14px;
   padding: 15px 0px 0px;
 }
 
-/* line 21, src/sass/general/_footer.scss */
+/* line 22, src/sass/general/_footer.scss */
 .site-footer .footer-content .footer-content-section .footer-content-item .footer-link {
   text-decoration: none;
   font-weight: 100;
   color: #000000;
 }
 
-/* line 30, src/sass/general/_footer.scss */
+/* line 31, src/sass/general/_footer.scss */
 .site-footer .copyright {
   font-weight: 100;
   padding: 30px 0px;
