@@ -1,5 +1,6 @@
 .projects-bar {
     display: flex;
+    margin-top: 78px;
     padding: 30px 50px;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +21,9 @@
 
 @media only screen and (max-width: 768px) {
     .projects-bar {
+        margin-top: 74px;
         padding: 30px 35px;
+
         .projects-header {
             font-size: 18px;
         }
@@ -40,5 +43,4 @@
             margin-bottom: 20px;
         }
     }
-
 }

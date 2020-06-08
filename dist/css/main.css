@@ -552,19 +552,21 @@ body {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   font-size: 14px;
+  position: fixed;
+  top: 0;
   background: #ffffff;
 }
 
-/* line 17, src/sass/general/_header.scss */
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
-/* line 22, src/sass/general/_header.scss */
-.site-logo {
+/* line 16, src/sass/general/_header.scss */
+.site-header .site-logo {
   max-height: 50px;
   padding: 0 15px;
+}
+
+/* line 21, src/sass/general/_header.scss */
+.site-header .menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
 /* line 27, src/sass/general/_header.scss */
@@ -594,7 +596,7 @@ body {
 }
 
 /* line 47, src/sass/general/_header.scss */
-.separating-header-line {
+.separating-line {
   display: block;
   position: absolute;
   width: 100%;
@@ -605,13 +607,13 @@ body {
 
 @media only screen and (max-width: 768px) {
   /* line 57, src/sass/general/_header.scss */
-  .site-logo {
-    padding: 0px;
-    height: 46px;
-  }
-  /* line 62, src/sass/general/_header.scss */
   .site-header {
     max-height: 74px;
+  }
+  /* line 60, src/sass/general/_header.scss */
+  .site-header .site-logo {
+    padding: 0px;
+    height: 46px;
   }
   /* line 65, src/sass/general/_header.scss */
   .site-header .menu-icon {
@@ -622,20 +624,23 @@ body {
   }
   /* line 73, src/sass/general/_header.scss */
   .site-header:hover {
-    background-color: transparent;
     -webkit-transition: 0s;
     transition: 0s;
   }
-  /* line 77, src/sass/general/_header.scss */
+  /* line 76, src/sass/general/_header.scss */
   .site-header:hover .site-logo {
     -webkit-filter: none;
             filter: none;
   }
-  /* line 82, src/sass/general/_header.scss */
-  .separating-header-line {
+  /* line 81, src/sass/general/_header.scss */
+  .site-header-main:hover {
+    background-color: transparent;
+  }
+  /* line 85, src/sass/general/_header.scss */
+  .separating-line {
     top: 74px;
   }
-  /* line 86, src/sass/general/_header.scss */
+  /* line 89, src/sass/general/_header.scss */
   .responsive-head:hover {
     background-color: rgba(0, 0, 0, 0.9);
     -webkit-transition: ease-in;
@@ -645,11 +650,11 @@ body {
     -webkit-animation-duration: 1.5s;
             animation-duration: 1.5s;
   }
-  /* line 92, src/sass/general/_header.scss */
+  /* line 95, src/sass/general/_header.scss */
   .responsive-head:hover .menu-icon {
     color: #bcbcbc;
   }
-  /* line 96, src/sass/general/_header.scss */
+  /* line 99, src/sass/general/_header.scss */
   .responsive-head:hover .site-logo {
     -webkit-filter: invert(100%);
             filter: invert(100%);
@@ -797,6 +802,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 78px;
   padding: 30px 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -806,12 +812,12 @@ body {
           align-items: center;
 }
 
-/* line 7, src/sass/components/_project_bar.scss */
+/* line 8, src/sass/components/_project_bar.scss */
 .projects-bar .projects-header {
   margin: 0;
 }
 
-/* line 11, src/sass/components/_project_bar.scss */
+/* line 12, src/sass/components/_project_bar.scss */
 .projects-bar .projects-button {
   text-decoration: none;
   color: #000000;
@@ -821,22 +827,23 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 22, src/sass/components/_project_bar.scss */
+  /* line 23, src/sass/components/_project_bar.scss */
   .projects-bar {
+    margin-top: 74px;
     padding: 30px 35px;
   }
-  /* line 24, src/sass/components/_project_bar.scss */
+  /* line 27, src/sass/components/_project_bar.scss */
   .projects-bar .projects-header {
     font-size: 18px;
   }
-  /* line 28, src/sass/components/_project_bar.scss */
+  /* line 31, src/sass/components/_project_bar.scss */
   .projects-bar .projects-button {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  /* line 35, src/sass/components/_project_bar.scss */
+  /* line 38, src/sass/components/_project_bar.scss */
   .projects-bar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -846,7 +853,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 39, src/sass/components/_project_bar.scss */
+  /* line 42, src/sass/components/_project_bar.scss */
   .projects-bar .projects-header {
     margin-bottom: 20px;
   }
