@@ -1072,3 +1072,64 @@ body {
     max-width: 75vw;
   }
 }
+
+/* line 1, src/sass/components/_about.scss */
+.about-main {
+  margin-top: 78px;
+}
+
+/* line 4, src/sass/components/_about.scss */
+.about-main .about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+/* line 11, src/sass/components/_about.scss */
+.about-main .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 300px;
+}
+
+/* line 17, src/sass/components/_about.scss */
+.about-main .about-content .text {
+  font-weight: 300;
+  margin: 0 0 30px;
+  padding: 0px 20px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+
+/* line 25, src/sass/components/_about.scss */
+.about-main .about-content .text:last-child {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 32, src/sass/components/_about.scss */
+  .about-main {
+    margin-top: 74px;
+  }
+  /* line 35, src/sass/components/_about.scss */
+  .about-main .about-content {
+    margin: 0 50px;
+  }
+  /* line 37, src/sass/components/_about.scss */
+  .about-main .about-content .text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}

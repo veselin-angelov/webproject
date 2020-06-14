@@ -1,0 +1,42 @@
+.about-main {
+    margin-top: 78px;
+
+    .about-header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0px 300px;
+
+        .text {
+            font-weight: 300;
+            margin: 0 0 30px;
+            padding: 0px 20px;
+            flex-basis: 50%;
+            text-align: center;
+        }
+
+        .text:last-child {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-main {
+        margin-top: 74px;
+
+        .about-content {
+            margin: 0 50px;
+            .text {
+                flex-basis: 100%;
+            }
+        }
+    }
+}
