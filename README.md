@@ -4,7 +4,7 @@
 
 This website is about an architecture studio.  
 
-[Link](https://veselin-angelov.github.io/webproject/dist/)
+[Link to the website](https://veselin-angelov.github.io/webproject/dist/)
 
 ![Image](./sitescreenshot.png)
 
