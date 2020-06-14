@@ -1055,7 +1055,7 @@ body {
   /* line 70, src/sass/components/_single_project.scss */
   .single-project-main .single-project-main-image .project-title {
     left: 30px;
-    top: 400px;
+    top: 420px;
   }
   /* line 77, src/sass/components/_single_project.scss */
   .single-project-main .project-info .text {
@@ -1098,39 +1098,130 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0px 300px;
+  margin: 0px 400px;
 }
 
-/* line 17, src/sass/components/_about.scss */
+/* line 16, src/sass/components/_about.scss */
 .about-main .about-content .text {
   font-weight: 300;
   margin: 0 0 30px;
   padding: 0px 20px;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  text-align: center;
 }
 
-/* line 25, src/sass/components/_about.scss */
+/* line 23, src/sass/components/_about.scss */
 .about-main .about-content .text:last-child {
   margin-bottom: 50px;
 }
 
+@media only screen and (max-width: 1440px) {
+  /* line 31, src/sass/components/_about.scss */
+  .about-main .about-content {
+    margin: 0 200px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 32, src/sass/components/_about.scss */
+  /* line 38, src/sass/components/_about.scss */
   .about-main {
     margin-top: 74px;
   }
-  /* line 35, src/sass/components/_about.scss */
+  /* line 41, src/sass/components/_about.scss */
   .about-main .about-content {
     margin: 0 50px;
   }
-  /* line 37, src/sass/components/_about.scss */
+  /* line 43, src/sass/components/_about.scss */
   .about-main .about-content .text {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+
+/* line 1, src/sass/components/_contact.scss */
+.contact-main {
+  margin-top: 78px;
+}
+
+/* line 4, src/sass/components/_contact.scss */
+.contact-main .contact-header {
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* line 9, src/sass/components/_contact.scss */
+.contact-main .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 15, src/sass/components/_contact.scss */
+.contact-main .contact-form .contact-form-field,
+.contact-main .contact-form .contact-form-textarea {
+  margin-bottom: 10px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: .3em;
+  padding-left: 10px;
+  border: thin solid;
+  border-color: #bcbcbc;
+}
+
+/* line 26, src/sass/components/_contact.scss */
+.contact-main .contact-form .contact-form-field {
+  height: 40px;
+}
+
+/* line 30, src/sass/components/_contact.scss */
+.contact-main .contact-form .contact-form-textarea {
+  padding-top: 10px;
+  min-width: 400px;
+  max-height: 500px;
+  min-height: 190px;
+}
+
+/* line 37, src/sass/components/_contact.scss */
+.contact-main .contact-form .contact-form-button {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 15px;
+  background-color: #bcbcbc;
+  border-radius: 1em;
+  font-weight: 300;
+  border: none;
+  font-size: 18px;
+}
+
+/* line 48, src/sass/components/_contact.scss */
+.contact-main .contact-form .contact-form-field:focus,
+.contact-main .contact-form .contact-form-textarea:focus,
+.contact-main .contact-form .contact-form-button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 59, src/sass/components/_contact.scss */
+  .contact-main {
+    margin-top: 74px;
+  }
+  /* line 63, src/sass/components/_contact.scss */
+  .contact-main .contact-form .contact-form-field,
+  .contact-main .contact-form .contact-form-textarea {
+    max-width: 300px;
+  }
+  /* line 68, src/sass/components/_contact.scss */
+  .contact-main .contact-form .contact-form-textarea {
+    min-width: 300px;
   }
 }

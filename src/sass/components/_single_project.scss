@@ -1,96 +1,96 @@
 .single-project-main {
-    margin-top: 78px;
+	margin-top: 78px;
 
-    .single-project-main-image {
-        max-width: 100%;
-        height: 770px;
+	.single-project-main-image {
+		max-width: 100%;
+		height: 770px;
 
-        img {
+		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-        }
+		}
 
-        .project-title {
-            position: absolute;
-            
-            left: 45px;
-            top: 770px;
+		.project-title {
+			position: absolute;
+			
+			left: 45px;
+			top: 770px;
 
-            .project-name {
-                margin: 0;
-                color: $secondary_color;
-            }
+			.project-name {
+				margin: 0;
+				color: $secondary_color;
+			}
 
-            .project-data {
-                margin: 0;
-                color: $secondary_color;
-                font-size: 12px;
-            }
-        }
-    }
+			.project-data {
+				margin: 0;
+				color: $secondary_color;
+				font-size: 12px;
+			}
+		}
+	}
 
-    .project-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 0px;
+	.project-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 50px 0px;
 
-        .text {
-            max-width: 35vw;
-            margin: 0;
-            margin-bottom: 30px;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 26px;
-            letter-spacing: 0.5px;
-        }
-    }
+		.text {
+			max-width: 35vw;
+			margin: 0;
+			margin-bottom: 30px;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 26px;
+			letter-spacing: 0.5px;
+		}
+	}
 
-    .project-second-image {
-        max-width: 100%;
-        height: 770px;
+	.project-second-image {
+		max-width: 100%;
+		height: 770px;
 
-        img {
+		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
-        }
-    }
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    .single-project-main {
-        margin-top: 74px;
+	.single-project-main {
+		margin-top: 74px;
 
-        .single-project-main-image {
-            height: 420px;
-    
-            .project-title {
-                left: 30px;
-                top: 400px;
-            }
-        }
+		.single-project-main-image {
+			height: 420px;
+	
+			.project-title {
+				left: 30px;
+				top: 420px;
+			}
+		}
 
-        .project-info {
-            .text {
-                max-width: 50vw;
-            }
-        }
+		.project-info {
+			.text {
+				max-width: 50vw;
+			}
+		}
 
-        .project-second-image {
-            height: 420px;
-        }
-    }
+		.project-second-image {
+			height: 420px;
+		}
+	}
 }
 
 @media only screen and (max-width: 425px) {
-    .single-project-main {
-        .project-info {
-            .text {
-                max-width: 75vw;
-            }
-        }
-    }
+	.single-project-main {
+		.project-info {
+			.text {
+				max-width: 75vw;
+			}
+		}
+	}
 }
