@@ -959,3 +959,116 @@ body {
     margin: 74px 40px 0px;
   }
 }
+
+/* line 1, src/sass/components/_single_project.scss */
+.single-project-main {
+  margin-top: 78px;
+}
+
+/* line 4, src/sass/components/_single_project.scss */
+.single-project-main .single-project-main-image {
+  max-width: 100%;
+  height: 770px;
+}
+
+/* line 8, src/sass/components/_single_project.scss */
+.single-project-main .single-project-main-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* line 14, src/sass/components/_single_project.scss */
+.single-project-main .single-project-main-image .project-title {
+  position: absolute;
+  left: 45px;
+  top: 770px;
+}
+
+/* line 20, src/sass/components/_single_project.scss */
+.single-project-main .single-project-main-image .project-title .project-name {
+  margin: 0;
+  color: #ffffff;
+}
+
+/* line 25, src/sass/components/_single_project.scss */
+.single-project-main .single-project-main-image .project-title .project-data {
+  margin: 0;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* line 33, src/sass/components/_single_project.scss */
+.single-project-main .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0px;
+}
+
+/* line 40, src/sass/components/_single_project.scss */
+.single-project-main .project-info .text {
+  max-width: 35vw;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.5px;
+}
+
+/* line 51, src/sass/components/_single_project.scss */
+.single-project-main .project-second-image {
+  max-width: 100%;
+  height: 770px;
+}
+
+/* line 55, src/sass/components/_single_project.scss */
+.single-project-main .project-second-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 64, src/sass/components/_single_project.scss */
+  .single-project-main {
+    margin-top: 74px;
+  }
+  /* line 67, src/sass/components/_single_project.scss */
+  .single-project-main .single-project-main-image {
+    height: 420px;
+  }
+  /* line 70, src/sass/components/_single_project.scss */
+  .single-project-main .single-project-main-image .project-title {
+    left: 30px;
+    top: 400px;
+  }
+  /* line 77, src/sass/components/_single_project.scss */
+  .single-project-main .project-info .text {
+    max-width: 50vw;
+  }
+  /* line 82, src/sass/components/_single_project.scss */
+  .single-project-main .project-second-image {
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* line 91, src/sass/components/_single_project.scss */
+  .single-project-main .project-info .text {
+    max-width: 75vw;
+  }
+}
