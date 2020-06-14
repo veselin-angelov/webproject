@@ -877,26 +877,27 @@ body {
   padding: 5px 15px;
   background-color: #bcbcbc;
   border-radius: 1em;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 23, src/sass/components/_project_bar.scss */
+  /* line 24, src/sass/components/_project_bar.scss */
   .projects-bar {
     margin-top: 74px;
     padding: 30px 35px;
   }
-  /* line 27, src/sass/components/_project_bar.scss */
+  /* line 28, src/sass/components/_project_bar.scss */
   .projects-bar .projects-header {
     font-size: 18px;
   }
-  /* line 31, src/sass/components/_project_bar.scss */
+  /* line 32, src/sass/components/_project_bar.scss */
   .projects-bar .projects-button {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  /* line 38, src/sass/components/_project_bar.scss */
+  /* line 39, src/sass/components/_project_bar.scss */
   .projects-bar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -906,7 +907,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  /* line 42, src/sass/components/_project_bar.scss */
+  /* line 43, src/sass/components/_project_bar.scss */
   .projects-bar .projects-header {
     margin-bottom: 20px;
   }
